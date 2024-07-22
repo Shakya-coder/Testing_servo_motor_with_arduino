@@ -1,0 +1,16 @@
+// Code by R K Shakya
+
+#include <Servo.h> // Include the Servo library u have to download from arduino ide library manager
+
+Servo myservo; // Create a Servo object
+
+void setup() {
+  myservo.attach(9); // Attach the servo to pin 9
+}
+
+void loop() {
+  myservo.write(180); // Set the servo to 90 degrees
+  delay(2000); // Wait for 2 second (optional)
+  myservo.write(0);
+  delay(2000);
+}
